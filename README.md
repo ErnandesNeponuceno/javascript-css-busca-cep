@@ -3,7 +3,7 @@
 Página para busca de endereço por meio do CEP, utilizando a API viaCEP.  <br>
 
 Os temas abordados são:<br>
-- Consumo de API´S.
+- Consumo de APIs.
 - Requisição HTTP assíncrona.
 - Conversão de Dados.
 - Tratamento de Erros.<br>
@@ -29,7 +29,7 @@ Os temas abordados são:<br>
 
 ## 💻 Preview:
 
-- Veja como ficou o projeto acessando: [Link]()
+- Veja como ficou o projeto acessando: [Link](https://javascript-css-busca-cep.vercel.app/)
   
 ![Imagem do Projeto](assets/img/tela.png)
 

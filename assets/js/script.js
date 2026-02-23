@@ -4,7 +4,7 @@ const resultDiv = document.querySelector('.main__result');
 
 function consultaCep() {
     const cep = cepInput.value.replace(/\D/g, '');
-    const url = 'https://viacep.com.br/ws/' + cep + '/json/';
+    const url = 'https://brasilapi.com.br/api/cep/v1/' + cep;
     const request = new XMLHttpRequest();
 
     if (!validateCep(cep)) {
@@ -36,9 +36,9 @@ function consultaCep() {
             } else {
                 inputCep.innerHTML = 
                     'CEP: ' + response.cep + '<br>' +
-                    'Logradouro: ' + response.logradouro + '<br>' +
-                    'Bairro: ' + response.bairro + '<br>' +
-                    'Cidade/UF: ' + response.localidade + ' / ' + response.uf;
+                    'Endereco: ' + response.street + '<br>' +
+                    'Bairro: ' + response.neighborhood + '<br>' +
+                    'Cidade/UF: ' + response.city + ' / ' + response.state;
             }
         } catch (e) {
             inputCep.innerHTML = 'API OFFLINE OU CEP INVALIDO';
